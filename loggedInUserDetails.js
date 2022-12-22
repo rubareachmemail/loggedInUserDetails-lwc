@@ -12,6 +12,7 @@ export default class GetUserDetails extends LightningElement {
    userRoleName;
    userProfileName;
    userManagerName;
+   test dev branch;
 
     @wire(getRecord, { recordId: Id, fields: [Name, RoleName, ProfileName, ManagerName] })
     userDetails({ error, data }) {
